@@ -19,11 +19,14 @@
   overflow: hidden;
 }
 
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 body {
   background-color: #F9F8FD;
   font-family: "Roboto";
-  overflow-x: hidden;
-  overflow-y: auto;
   color: #22253B;
 }
 
@@ -729,15 +732,59 @@ body {
   margin-bottom: 12px;
 }
 
+.price__table-container {
+  width: 1160px;
+  overflow-y: scroll;
+}
+
 table {
+  width: 100%;
   padding: 20px;
   background-color: #FFFFFF;
   margin-bottom: 20px;
+  border-radius: 30px;
+}
+@media (min-width: 1400px) {
+  table {
+    padding: 35px 40px;
+  }
 }
 
 tr {
+  display: flex;
+  align-items: center;
+  gap: 140px;
+  height: 57px;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+td:nth-child(1), th:nth-child(1) {
+  width: 372px;
+}
+
+td:nth-child(2), th:nth-child(2) {
+  width: 115px;
+}
+
+tr:nth-child(2n) {
+  background-color: rgb(243, 243, 243);
+}
+
+th, td {
   text-align: start;
-  padding: 20px 12px;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+th {
+  font-size: 16px;
+  color: rgb(56, 191, 242);
+}
+
+.tr-last {
+  font-weight: 700;
+  font-size: 24px;
 }
 
 .footnote {
