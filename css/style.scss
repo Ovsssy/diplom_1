@@ -187,11 +187,14 @@ body{
 }
 
 .technologies{
-    margin: 0 120px;
     margin-bottom: 58px;
     @media (min-width:1400px){
         margin-bottom: 84px;
     }
+}
+
+.technologies__title{
+    margin-bottom: 15px;
 }
 
 .container-background{
@@ -617,7 +620,6 @@ body{
 
 .title{
     text-align: center;
-    margin: 0 auto;
     @media (min-width:1400px) {
         font-size: 46px;
         margin-bottom: 35px;
@@ -657,12 +659,15 @@ body{
 }
 
 .price__table-container{
-    width: 1160px;
-    overflow-y: scroll;
+    overflow-x: scroll;
+    @media (min-width:1400px) {
+        width: 1160px;
+        overflow-x: auto;
+    }
 }
 
 table{
-    width: 100%;
+    width: 1160px;
     padding: 20px;
     background-color: #FFFFFF;
     margin-bottom: 20px;
