@@ -113,6 +113,11 @@ body {
   margin-bottom: 30px;
   padding: 0 10px;
 }
+@media (min-width: 600px) {
+  .testing {
+    padding: 0 40px;
+  }
+}
 @media (min-width: 1400px) {
   .testing {
     width: 1160px;
@@ -141,6 +146,12 @@ body {
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 18px;
+}
+@media (min-width: 600px) {
+  .testing__title {
+    width: 460px;
+    font-size: 32px;
+  }
 }
 @media (min-width: 1400px) {
   .testing__title {
@@ -442,7 +453,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .technologies__block-text.visually-hidden {
     position: absolute;
     width: 1px;
